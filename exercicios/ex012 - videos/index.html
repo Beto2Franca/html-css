@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		
+		#container{
+			display: block;
+			width: 580px;
+			height: 335px;
+			margin: 0 auto;
+			background-color: lightblue;
+			border-radius: 15px;
+			padding: 5px;
+			
+		}
+		iframe{
+			margin-top: 10px;
+			margin-left: 10px;
+			border-radius: 10px;
+		}
+		.youtube{
+			margin-left: 30%;
+
+		
+		}
+		h1{
+			text-align: center;
+		}
+		hr{
+			width: 200px;
+		 	margin: left;
+		}
+		
+	</style>
+	
+    <title>Vídeos com HTML5</title>
+</head>
+    
+<body>
+	
+	<h1>Inserindo vídeos hospedados localmente</h1>
+	<hr>
+	<p>Esse vídeo está hopedado no meu próprio servidor.</p>
+
+		<video src="midia/aquarela-video.MP4" width="550" controls></video>
+		
+		
+		<!--Inserir de outra forma agora. Varias opções caso a primeira não abra em um navegador ira abrir a segunda, terceira-->
+		
+		<h1>Mais uma opção</h1>
+
+		<video width="560" poster="imagens/thumb-video.jpg" controls>
+		
+		<source src="midia/aquarela-video.MP4" type="video/mp4">
+		<source src="midia/aquarela-video.m4v" type="video/m4v">
+		<source src="midia/aquarela-video.webm" type="video/webm">
+		<source src="midia/aquarela-video.ogv" type="video/ogg">
+		
+		<p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+		
+		</video>
+
+			
+		<h1>Inserindo vídeos do youtube - Externo</h1>
+		
+		<section id="container">
+				
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/9x7oHqJa8zM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+		</section>
+	
+	
+		<h1>Teste dois do video do youtube</h1>
+		
+				<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/9x7oHqJa8zM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+</body>    
+    
+</html> 
+
