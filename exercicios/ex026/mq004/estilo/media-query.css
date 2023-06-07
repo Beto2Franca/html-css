@@ -35,6 +35,7 @@ grandes telas: acima de 1200px
         content: 'Esse impressão foi feita atraves do site';
         text-decoration: overline;
     }
+    
     img#phone {display: none;}
     img#tablet {display: none;}
     img#print {display: block;}
