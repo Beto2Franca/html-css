@@ -18,4 +18,24 @@
     main{
         width: 768px;
     }
+    
+
+
+}
+
+@media print {
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    header{
+        display: none;
+    }
+    
+    article::after{
+        content: 'Impresso no site teste beto frança';
+        
+    }
+
+
 }
