@@ -9,7 +9,7 @@
 <body>
     <h1>Exemplo de Formulario 05</h1>
 
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <fieldset>
             <legend>Sexo</legend>
@@ -24,10 +24,17 @@
         <fieldset>
             <legend>Esportes favoritos</legend>
 
-            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Basquete</label> <br>
-            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label> <br>
-            <input type="checkbox" name="nat" id="inat" checked><label for="inat">Natação</label> <br>
-            <input type="checkbox" name="tenis" id="itenis"><label for="itenis">Tênis</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" value="Basquete">
+            <label for="iesfut">Basquete</label> <br>
+
+            <input type="checkbox" name="fut" id="ifut">
+            <label for="ifut">Futebol</label> <br>
+
+            <input type="checkbox" name="nat" id="inat" checked>
+            <label for="inat">Natação</label> <br>
+
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tênis</label> <br>
 
         </fieldset>
         
@@ -36,7 +43,17 @@
             <input type="reset" value="Limpar">
         </p>
 
+        <div>
+            <div>
+                <input type="radio" name="mas" id="imas">
+                <label for="imas">Masculino</label>
+            </div>
 
+            <div>
+                <input type="radio" name="mas" id="imas">
+                <label for="imas">Feminino</label>
+            </div>
+        </div>
     </form>
 </body>
 </html>
