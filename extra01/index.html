@@ -29,6 +29,8 @@
             background-color: #4d4d4d;
             border-radius: 150px;
             position: relative;
+
+            cursor: pointer;
         }
         .indicador{
             width: 150px;
@@ -42,8 +44,17 @@
 </head>
 <body>
     <h1>Modo Dark e modo Light</h1>
-    <div class="trilho">
+    <div class="trilho" id="trilho">
         <div class="indicador"></div>
     </div>
+
+
+    <script>
+        let trilho = document.getElementById('trilho')
+
+        trilho.addEventListener('click', ()=>{
+            trilho.classList.toggle('dark')
+        })
+    </script>
 </body>
 </html>
